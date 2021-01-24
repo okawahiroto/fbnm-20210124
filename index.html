@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Page</title>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDSEr6A4wq-GZ_jrsUtPBqx2qYbefuYcIE",
+      authDomain: "fbnm-20210124.firebaseapp.com",
+      projectId: "fbnm-20210124",
+      storageBucket: "fbnm-20210124.appspot.com",
+      messagingSenderId: "331194618350",
+      appId: "1:331194618350:web:c201b4f8c898421e87beff",
+      measurementId: "G-MS3FF3H2WX"
+    };
+
+    var fbase;
+    try {
+      fbase = firebase.initializeApp(firebaseConfig);
+    } catch(e) {
+      console.log(e);
+    }
+    console.log(fbase.name);
+  </script>
+</head>
+
+<body>
+  <h1>Sample Page</h1>
+  <p>Firebase name:
+    <script>
+      document.write(fbase.name);
+    </script>
+  </p>
+<script>
+
+</script>
+
+
+</body>
+
+</html>
